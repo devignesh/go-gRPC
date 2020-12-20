@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package client;
+
+option go_package = "clientstream/clientpb;clientpb";
+
+message Greeting {
+
+    string first_name = 1;
+    string last_name = 2;
+}
+
+message ClientManytimeRequest {
+
+    Greeting greeting = 1;
+}
+
+message ClientManytimeResponse {
+    string result = 1;
+}
+
+service GreetService {
+    //client stream api
+
+    rpc ClientManytime (stream ClientManytimeRequest) returns (ClientManytimeResponse) {};
+}
