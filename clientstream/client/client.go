@@ -103,5 +103,4 @@ func clientstreaming(c clientpb.GreetServiceClient, timeout time.Duration) {
 		return
 	}
 	fmt.Printf("Client stream Response: %v\n", res)
-
 }
