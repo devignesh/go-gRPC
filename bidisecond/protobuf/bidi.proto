@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package protobuf;
+
+option go_package = "proto/bidi.proto;protobuf";
+
+message Request {
+  int32 num = 1;
+}
+
+message Response {
+  int32 result = 1;
+}
+
+
+service Math {
+    rpc Max (stream Request) returns (stream Response) {}
+  }
+  
