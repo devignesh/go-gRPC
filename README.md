@@ -1,5 +1,5 @@
 # go-gRPC
-Goalng gRPC practise 
+Goalng gRPC practise examples.
 
 
 # gRPC 
