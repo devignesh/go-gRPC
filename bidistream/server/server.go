@@ -15,8 +15,7 @@ import (
 	"github.com/devignesh/grpc/bidistream/bidipb"
 )
 
-type server struct {
-}
+type server struct{}
 
 func (*server) BidiStream(stream bidipb.GreetService_BidiStreamServer) error {
 	fmt.Printf("bi direction streaming api rpc\n")
