@@ -21,7 +21,7 @@ func (s server) Max(srv pb.Math_MaxServer) error {
 	for {
 
 		// exit if context is done
-		// or continue
+		
 		select {
 		case <-ctx.Done():
 			return ctx.Err()
